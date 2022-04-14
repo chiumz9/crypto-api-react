@@ -1,4 +1,4 @@
-# Creating Front-end with react and API from a GA associate.
+# Creating Front-end with react using API from a GA associate.
 
 This project lists all the avaiable crypto coins from a given API in a modal frame format.
 
