@@ -1,18 +1,3 @@
-# Creating Front-end with react using API from a GA associate.
-
-This project lists all the avaiable crypto coins from a given API in a modal frame format.
-
-Homepage defaults to display "Top Ten Cryptos" which displays the top ten ranked cryptocurrency.
-
-"All Crypto" selection displays all available cryptos from the API
-
-"Find Crypto" selection displays a input box and submitting input will flter for the API.
-
-Clicking a crypto card will display additional information.
-
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

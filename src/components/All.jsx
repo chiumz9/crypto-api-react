@@ -3,25 +3,29 @@ import axios from 'axios';
 import { useState, useEffect } from 'react'
 
 
-function All({ allData }) {
-   let price = 0
+function All({ allData, setCurrentCoin, setShowModal }) {
+  let price = 0
+  function passParent(coin) {
+    setCurrentCoin(coin)
+    setShowModal(true)
+  }
 
-   return (
-      <div>
-         <div className="Card">
-            {allData.map(
-               coin => (
-                  <div className="Info">
-                     <div>{coin.name}</div>
-                     <div>{coin.symbol}</div>
-                     <div>Price:</div>
-                     <div>{coin.quotes?.USD.price}</div>
-                  </div>
-               )
-            )}
-         </div>
+  return (
+    <div>
+      <div className="Card">
+        {allData.map(
+          coin => (
+            <div className="Info" onClick={() => passParent(coin)}>
+              <div>{coin.name}</div>
+              <div>{coin.symbol}</div>
+              <div>Price:</div>
+              <div>{coin.quotes?.USD.price}</div>
+            </div>
+          )
+        )}
       </div>
-   )
+    </div>
+  )
 
 }
 

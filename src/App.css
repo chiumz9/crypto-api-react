@@ -1,11 +1,14 @@
 .Header{
    background-color: black;
    color: white;
+   padding: 20px 10px 20px 20px;
 }
 .Close {
    float: right;
 }
 .ModalCotainer{
+   justify-content: center;
+   text-align: center;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -37,13 +40,16 @@
 }
 .Info{
    border: 1px solid black;
+   margin: 5px 5px 5px 5px;
    width: 200px;
    height: 125px;
 }
 .Button{
-   border: 1px solid black;
+   background-color: white;
+   border: 3px solid black;
 }
 .Navbar{
+   background-color: red;
    display: flex;
    justify-content: space-evenly;
    border: 1px solid red;
